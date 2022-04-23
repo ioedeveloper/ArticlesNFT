@@ -14,3 +14,98 @@ a {
 * {
   box-sizing: border-box;
 }
+.mintsong_container{
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  justify-content: center;
+}
+
+.mintsong_form {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.image_preview {
+  width: 30%;
+}
+
+.input_button_container {
+  display: flex;
+}
+
+.mintsong_form_input  {
+  padding: 10px;
+  margin: 10px;
+}
+
+.mintsong_form_button {
+  padding: 10px;
+  margin: 10px;
+}
+
+.image_preview > img {
+  width: 100%;
+  height: 100%;
+}
+.mint_button{
+  display:flex;
+  justify-content:end;
+}
+
+.song_info {
+  display: flex; 
+  justify-content: end;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+.mintsong_container{
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  justify-content: center;
+}
+
+.mintsong_form {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.image_preview {
+  width: 30%;
+}
+
+.input_button_container {
+  display: flex;
+}
+
+.mintsong_form_input  {
+  padding: 10px;
+  margin: 10px;
+}
+
+.mintsong_form_button {
+  padding: 10px;
+  margin: 10px;
+}
+
+.image_preview > img {
+  width: 100%;
+  height: 100%;
+}
+.mint_button{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.song_info {
+  display: flex; 
+  justify-content: end;
+  padding: 10px;
+  margin: 10px;
+}

@@ -6,12 +6,26 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate-playlist-token-type": "abi-types-generator --provider=ethers_v5 './contracts/types/playlisttoken-abi.json' --output='./contracts/types/'",
+    "generate-song-token-type": "abi-types-generator --provider=ethers_v5 './contracts/types/songtoken-abi.json' --output='./contracts/types/'",
+    "drop-token-type": "abi-types-generator --provider=ethers_v5 './contracts/types/droptoken-abi.json' --output='./contracts/types/'",
+    "generate-article-token-type": "abi-types-generator --provider=ethers_v5 './contracts/types/articletoken-abi.json' --output='./contracts/types/'",
+    "generate-manftesto-token-type": "abi-types-generator --provider=ethers_v5 './contracts/types/manftestotoken-abi.json' --output='./contracts/types/'"
   },
   "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.6.2",
+    "@mui/material": "^5.6.2",
+    "@walletconnect/web3-provider": "^1.7.7",
+    "ethereum-abi-types-generator": "^1.3.2",
+    "ethers": "^5.6.4",
     "next": "12.1.5",
     "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react-dom": "18.0.0",
+    "walletlink": "^2.5.0",
+    "web3modal": "^1.9.7"
   },
   "devDependencies": {
     "@types/node": "17.0.25",

@@ -1,0 +1,40 @@
+.songnft {
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 15%;
+    height: 120px;
+    box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: transform 100ms ease-in;
+    cursor: pointer;
+  }
+  
+  .songnft:hover {
+    transform: scale(1.07);
+  }
+  
+  .play_avatar {
+    margin: 20px;
+    border: 3px solid white;
+    border-radius: 50%;
+    z-index: -100;
+    color: white
+  }
+  
+  .songnft > h6 {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: white;
+  }
+
+  .add_to_playlist {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 20px;
+    justify-content: center;
+}

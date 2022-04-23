@@ -1,0 +1,63 @@
+.playlist {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    flex-wrap: wrap;
+    
+}
+
+.playlist_left {
+    display:flex;
+    flex-direction:column;
+    width: 70%;
+}
+
+.playlist_right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;    
+}
+
+.playlist_button {
+    margin-bottom: 10% !important;
+}
+
+.playlist_image  {
+    width: 57%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.more{
+    font-size: 50px;
+}
+
+.playlist_button > a {
+    text-decoration: none;
+}
+
+.playlist_button > a:link {
+    color: none;
+  }
+  
+  /* visited link */
+  .playlist_button > a:visited {
+    color: none;
+  }
+  
+  /* mouse over link */
+  .playlist_button > a:hover {
+    color: none;
+  }
+  
+  /* selected link */
+  .playlist_button > a:active {
+    color: none;
+  }
+
+  .playlist_name {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifs;
+      padding: 20px;
+      
+  }
