@@ -33,17 +33,16 @@ const Playlist = () => {
         });
 
         setIsLoading(true)
-        // console.log(window.ethereum.selectedAddress)
         // const balance = await getContract(window.ethereum).dropTokenContract.balanceOf(window.ethereum.selectedAddress)
         const articleTokenContract = getContract(window.ethereum).articletokenContract
         const manftestoTokenContract = getContract(window.ethereum).manftestotokenContract
         const manifesto = await manftestoTokenContract.manifestos(articleId)  
-        const articles = await manftestoTokenContract.getManifesto(articleId)
+        const articleAPI = await manftestoTokenContract.getManifesto(articleId)
         const articleInfo = []
-        for (const article of articles) {
+        for (const article of articleAPI) {
             articleInfo.push({
-                uri: await manftestoTokenContract.tokenURI(article.tokenId),
-                author: await manftestoTokenContract.ownerOf(article.tokenId),
+                uri: await articleTokenContract.tokenURI(article.tokenId),
+                author: await articleTokenContract.ownerOf(article.tokenId),
                 articleInfo: {
                     score: article.score.toString(),
                     tokenId: article.tokenId.toString(),
@@ -60,10 +59,8 @@ const Playlist = () => {
             }
             return 0;
             })
-        console.log(articleInfo)
         setArticle(articleInfo)
         setName(manifesto.name)
-        console.log(balance)
         setBalance(balance.toString())
         setIsLoading(false)
     }
@@ -77,12 +74,11 @@ const Playlist = () => {
         alert('articles upvoted')
     }
 
-    console.log({articles})
 
     return (
         <Container maxWidth="lg">
+       
         <div className="playlist">
-
             <div className="playlist_left">
                 <div className="playlist_name">{name}</div>
 

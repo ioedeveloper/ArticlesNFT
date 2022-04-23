@@ -33,18 +33,17 @@ const Song = ({ song, playlistId, updated }: SongProps) => {
             // let data = await fetch('https://ipfs.io/ipfs/'+ ipfs) as any
             let data = await fetch(ipfs) as any
             data = await data.json()
-            console.log(data)
             setMetadata(data)
         })()
     }, [])
     
-    const title = `${songInfo.name}`
+    const title = `${songInfo}`
+    console.log({songInfo})
     return (
         <div title={title} className="song">
-            <div className='artist_name'>
+             <div className='artist_name'>
                 <div className="song_name">Article {metadata.name}</div>
-                <div className="song_artist">{metadata.artist}</div>
-            </div>
+            </div> 
           
             <ArticleTwoToneIcon fontSize="large"/>
          
@@ -52,7 +51,6 @@ const Song = ({ song, playlistId, updated }: SongProps) => {
             <span className="song_artist"> <b>
             <Tooltip title="upvote count"> 
             <Box sx={{width: 50, bgcolor: 'text.disabled', color: 'background.paper', p: 2 }}>
-            {songInfo.manifestoMetadata}
             
             </Box>
              </Tooltip>

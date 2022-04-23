@@ -9,8 +9,8 @@ import manftestotokenAbi from './types/manftestotoken-abi.json'
 // export const droptokenAddress = '0x43652034141a0cc06c125f9BEdfD0f7b4688A06E' // Goerli
 
 // Harmony Testnet
-export const articletokenAddress = '0x0901f30568d21dDb7b3aC387B02aF6E355e03335' // Harmony
-export const manftestotokenAddress = '0x1480fce49A17eA5Ed6E5e6f777ed3e9dbD8d3b89' // Harmony
+export const articletokenAddress = '0x0901f30568d21dDb7b3aC387B02aF6E355e03335' //xDAI / Gnosis Chain
+export const manftestotokenAddress = '0x1480fce49A17eA5Ed6E5e6f777ed3e9dbD8d3b89' // xDAI / Gnosis Chain
 
 
 
