@@ -106,13 +106,13 @@ const Playlist = () => {
             
                 <Fab variant="extended" className="playlist_button">
                     <LibraryMusicOutlinedIcon sx={{ mr: 1 }} />
-                    <Link href='/songnftlist'>
+                    <Link href='/articlesnftlist'>
                         Articles NFTs
                     </Link>
                     
                 </Fab>
                 <Fab variant="extended" className="playlist_button">
-                        <Link href='/mintsong'>
+                        <Link href='/mintarticles'>
                         Mint your Article NFT
                         </Link>
                 </Fab>

@@ -65,7 +65,7 @@ const Song = ({ song, playlistId, updated }: SongProps) => {
                         updated()
                     }}><ThumbUpIcon /></Button>
                     <Button className="downvottingButton" type="button" variant="outlined" onClick={async () => { 
-                        const tx = await getContract(window.ethereum).manftestotokenContract.upvoteArticle(playlistId, playlistId)
+                        const tx = await getContract(window.ethereum).manftestotokenContract.downVote(playlistId, playlistId)
                         await tx.wait()
                         updated()
                     }}><ThumbDownIcon /></Button>

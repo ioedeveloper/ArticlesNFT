@@ -131,8 +131,9 @@ const Header = () => {
         <div className="header">
             <div className='header_left'>
                 <img src='../images/remix.png' alt='logo'/>
+                <p className="main-text">ETHAmstMaNFTesto</p>
             </div>
-
+          
             <div className='header_nav_items'>
               
             </div>
@@ -147,7 +148,7 @@ const Header = () => {
                     </Link>
                 
 
-             <Link href='/addtoplaylist' >
+             <Link href='/addtoarticles' >
                  <div className="header_option">
                     <AddIcon fontSize="small" />
                     <div className="text_font">Add Article</div>
