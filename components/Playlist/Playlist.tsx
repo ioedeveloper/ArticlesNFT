@@ -79,6 +79,7 @@ const Playlist = () => {
         <Container maxWidth="lg">
        
         <div className="playlist">
+            {console.log({articles})}
             <div className="playlist_left">
                 <div className="playlist_name">{name}</div>
 

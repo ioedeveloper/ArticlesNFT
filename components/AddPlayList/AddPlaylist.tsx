@@ -7,6 +7,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import ArticleTwoToneIcon from '@mui/icons-material/ArticleTwoTone';
 
 
 interface SongNFTListProps {
@@ -34,22 +35,13 @@ function AddPlayList({ image, profileSrc, title }: SongNFTListProps) {
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
         <CardContent sx={{ flex: '1 0 auto' }}>
           <Typography component="div" variant="h5">
-            {title}
-          </Typography>
-          <Typography variant="subtitle1" color="text.secondary" component="div">
-            Mac Miller
+          <ArticleTwoToneIcon fontSize="large"/>{title}
           </Typography>
         </CardContent>
         <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1, margin: '5px'}}>
-          <Button variant="outlined">Add to Playlist</Button>
+          <Button variant="outlined">Add to Article</Button>
         </Box>
       </Box>
-      <CardMedia
-        component="img"
-        sx={{ width: 100 }}
-        image={image}
-        alt="Live from space album cover"
-      />
     </Card>
   );
 
