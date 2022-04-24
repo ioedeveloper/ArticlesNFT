@@ -26,9 +26,9 @@
 }
 
 .votingButton {
-    background-color: #4CAF50;
+    background-color: #4CAF50 !important;
     border: none;
-    color: white;
+    color: white !important;
     padding: 10px;
     text-align: center;
     text-decoration: none;
@@ -42,9 +42,9 @@
 .downvottingButton{
     text-align: center;
     align-items: center;
-    background-color: #f44336;
+    background-color: #f44336 !important;
     border: none;
-    color: white;
+    color: white !important;
     padding: 10px;
     text-align: center;
     text-decoration: none;
